@@ -96,7 +96,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 // Custom plugin ka type extend karna
 declare module 'chart.js' {
-  interface ChartOptions {
+  interface ChartOptionst {
     plugins?: {
       centerText?: {
         totalValueColor: string;

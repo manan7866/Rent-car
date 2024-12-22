@@ -172,21 +172,21 @@
 "use client";
 import Image from "next/image"
 
-import home from "@/Public/Dashboard/home.png"
-import car from "@/Public/Dashboard/car.png"
-import chart from "@/Public/Dashboard/chart.png"
-import wallet from "@/Public/Dashboard/wallet.png"
-import message from "@/Public/Dashboard/message.png"
-import calendar from "@/Public/Dashboard/calendar.png"
+import home from "@/public/Dashboard/home.png"
+import car from "@/public/Dashboard/car.png"
+import chart from "@/public/Dashboard/chart.png"
+import wallet from "@/public/Dashboard/wallet.png"
+import message from "@/public/Dashboard/message.png"
+import calendar from "@/public/Dashboard/calendar.png"
 
-import setting from "@/Public/Dashboard/setting.png"
-import help from "@/Public/Dashboard/help.png"
-import briefcase from "@/Public/Dashboard/briefcase.png"
+import setting from "@/public/Dashboard/setting.png"
+import help from "@/public/Dashboard/help.png"
+import briefcase from "@/public/Dashboard/briefcase.png"
 
-import logout from "@/Public/Dashboard/logout.png"
+import logout from "@/public/Dashboard/logout.png"
 
-import sun from "@/Public/Dashboard/sun.png"
-import moon from "@/Public/Dashboard/moon.png"
+import sun from "@/public/Dashboard/sun.png"
+import moon from "@/public/Dashboard/moon.png"
 
 import { useState } from "react";
 

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -10,7 +14,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "preserve", // Change to react-jsx for better JSX handling in React 17+
     "incremental": true,
     "plugins": [
       {
@@ -18,9 +22,26 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    // Add the `baseUrl` to help with path resolution
+    "baseUrl": ".",
+    // Add support for type definitions from `next-env.d.ts`
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/next/types"
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts", // This file is necessary for Next.js to work properly with TypeScript
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts" // Include generated types for Next.js
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules as usual
+    "dist" // Optionally exclude dist folder if it exists
+  ]
 }

@@ -1,0 +1,330 @@
+"use client"
+
+import Image from "next/image"
+
+import Dashboard from "@/components/Dashboard";
+
+
+import car from "@/public/images/car.svg"
+import car2 from "@/public/images/car2.svg"
+import car3 from "@/public/images/car3.svg";
+import car6 from "@/public/images/car6.svg"
+import Charts from "../charts/Charts";
+
+
+export default function Admin() {
+
+
+    const taracectioncar = [{
+        carpic : car2,
+        carname : "Nissan GT - R",
+        carcatagory : "Sport Car",
+        date: "20 July",
+        price : "$80.00"
+
+    },{
+        carpic : car,
+        carname : "Koegnigsegg",
+        carcatagory : "Sport Car",
+        date: "19 July",
+        price : "$99.00"
+
+    },{
+        carpic : car3,
+        carname : "Rolls - Royce",
+        carcatagory : "Sport Car",
+        date: "18 July",
+        price : "$96.00"
+
+    },{
+        carpic : car6,
+        carname : "CR - V",
+        carcatagory : "SUV",
+        date: "17 July",
+        price : "$80.00"
+
+    }]
+
+    return (
+        <>
+            {/* <AdminHeader /> */}
+            <main className="w-full h-auto bg-[#F6F7F9]">
+                <div className="flex xl:w-full">
+                    <div className="hidden 2xl:block m2xl:block m2xl:w-1/4 m2xl:h-auto bg-white p-10">
+                        <Dashboard />
+                    </div>
+
+                    <div className="px-10 md:px-6 md:py-6 sm:px-6 w-full xs:px-4 xs:py-4 sm:py-6 2xl:w-full xl:w-full md:w-full lg:w-full py-5">
+                        <div className="m2xl:flex m2xl:justify-between w-full 2xl:justify-between gap-5 2xl:w-full grid grid-cols-1 ">
+
+                            <div className="relative  2xl:w-full xl:w-full h-auto w-full bg-white rounded-lg space-y-5 p-5">
+                                <h1 className=" bg-white text-[20px] font-bold">Details Rental</h1>
+                                <div className="w-full h-auto">
+                                    <svg className="w-full h-full" viewBox="0 0 486 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_35_8520)">
+                                            <rect width="486" height="272" rx="10" fill="#F6F7F9" />
+                                            <path d="M230.5 273C295 142.5 391.909 251.5 506.007 97.4999" stroke="#A6CEF2" strokeWidth="16" strokeLinecap="round" />
+                                            <path d="M144.04 150.107L174.391 143.5L192.377 153L204.742 198L217.108 209L226.663 240.311L169.332 256.5L144.04 150.107Z" fill="#A6CEF2" />
+                                            <path d="M57 64.6899L123.861 62L140 125.481L57 147V64.6899Z" fill="#A6CEF2" />
+                                            <line x1="8" y1="-8" x2="313.27" y2="-8" transform="matrix(0.19443 0.980916 -0.98792 0.154963 214.86 -41)" stroke="white" strokeWidth="16" strokeLinecap="round" />
+                                            <line x1="5" y1="-5" x2="316.27" y2="-5" transform="matrix(0.19443 0.980916 -0.98792 0.154963 105.82 -23)" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M502.5 177L97.4756 278.998" stroke="white" strokeWidth="16" strokeLinecap="round" />
+                                            <line x1="8" y1="-8" x2="322.378" y2="-8" transform="matrix(0.544406 0.838822 -0.889535 0.456866 309.286 -41)" stroke="white" strokeWidth="16" strokeLinecap="round" />
+                                            <path d="M-16.5 171.5C149.023 114.177 302.973 83.4419 488.623 87.9815" stroke="white" strokeWidth="16" strokeLinecap="round" />
+                                            <path d="M423.225 113L392.81 128L368.079 158.5L423.224 417.371" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M154.156 209.403L137.299 218.683L123.904 238.053L159.347 406.031" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M149.661 148.5L174.953 142.5L194.626 153L204.743 199.5L218.794 209L227.787 242" stroke="white" strokeWidth="8" strokeLinecap="round" />
+                                            <path d="M388.038 128.439L360.995 90.9845" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M265.445 145L300.293 131.5L308.724 96.5" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M244.087 40.0466L287.928 37.5L325.586 57L338.513 85" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M100.199 180.833L90.082 140.317" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M133.923 221.833L123.806 181.317" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M209.962 199.943L268.699 188" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M122.99 16.9717L155.23 11.0006" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M52.025 144.962L51.8159 69.0155" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M195.577 151.335L225.539 140.5" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M198.542 108.037L192.615 83.8928L170.951 73.248L147.975 -32.0002" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M228.566 137.663L249.145 116.5" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M230.598 143.202L257.752 150.403" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M314.345 44.5L352.178 21.4032" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M289.052 35L289.052 -20.5" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M-46 73L185.633 53" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M144.83 167.001L72.0002 196L44.9998 274.5" stroke="white" strokeWidth="10" strokeLinecap="round" />
+                                            <path d="M328 92.9999L257.552 100.707C254.037 101.092 251.615 104.417 252.328 107.88L270.187 194.715L288.874 289.006" stroke="#3563E9" strokeWidth="8" strokeLinecap="round" />
+                                            <path d="M337.62 72.45C336.57 67.83 332.54 65.75 329 65.75C329 65.75 329 65.75 328.99 65.75C325.46 65.75 321.42 67.82 320.37 72.44C319.2 77.6 322.36 81.97 325.22 84.72C326.28 85.74 327.64 86.25 329 86.25C330.36 86.25 331.72 85.74 332.77 84.72C335.63 81.97 338.79 77.61 337.62 72.45ZM329 77.46C327.26 77.46 325.85 76.05 325.85 74.31C325.85 72.57 327.26 71.16 329 71.16C330.74 71.16 332.15 72.57 332.15 74.31C332.15 76.05 330.74 77.46 329 77.46Z" fill="#3563E9" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_35_8520">
+                                                <rect width="486" height="272" rx="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div className="flex items-center">
+                                    {/* <Image src={Look} alt="Car" className="w-44 h-32" /> */}
+                                    <div className="flex justify-between items-start px-2 py-5 gap-[160px]">
+                                        <div>
+                                            <h1 className="font-bold bg-white text-[24px] ">Nissan GT-R</h1>
+                                            <div className="flex justify-between xs:gap-[100px] gap-[185px]">
+                                                <h6 className="text-[14px] text-[#3D5278] font-medium">Sport</h6>
+                                                <h6 className="m2xl:hidden text-[14px] text-[#3D5278] font-medium">#9761</h6>
+                                            </div>
+                                        </div>
+                                        <h6 className="hidden m2xl:block text-[14px] text-[#3D5278] font-medium">#9761</h6>
+                                    </div>
+                                </div>
+
+                                {/* Pickup Location  */}
+
+                                <div className="w-full h-auto m2xl:h-44 py-5 bg-white rounded-m2xl space-y-5">
+                                    <div className="flex w-full gap-3">
+                                        <input type="radio" />
+                                        <h2 className=" text-[16px] font-semibold">Pick - Up</h2>
+                                    </div>
+                                    <div className="m2xl:flex m2xl:justify-between m2xl:items-center ">
+                                        <div className="m2xl:w-[40%] w-full">
+                                            <h2 className="text-[16px] font-bold ">Location</h2>
+                                            <div className="bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl sm:w-full sm:h-16 text-[#90A3BF] text-[12px] font-medium p-5">
+                                                <select className="bg-transparent outline-none" name="city" id="city">
+                                                    {[
+                                                        { value: "none", label: "Select your city" },
+                                                        { value: "khi", label: "Karachi" },
+                                                        { value: "hyd", label: "Hyderabad" },
+                                                        { value: "lhr", label: "Lahore" },
+                                                        { value: "qta", label: "Quetta" },
+                                                        { value: "isb", label: "Islamabad" },
+                                                        { value: "nbs", label: "Nawabshah" },
+                                                    ].map((option) => (
+                                                        <option key={option.value} value={option.value}>
+                                                            {option.label}
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div className="w-20 hidden m2xl:block">
+                                            <div className="w-[1px] h-14 bg-[#C3D4E9] opacity-40">
+                                            </div>
+                                        </div>
+                                        <div className="m2xl:w-[40%] w-full" >
+                                            <h2 className="text-[16px] font-bold">Date</h2>
+                                            <div className="bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl sm:w-full sm:h-16 text-[#90A3BF] text-[12px] font-medium p-5">
+                                                <input className="bg-[#F6F7F9] rounded-m2xl m2xl:bg-transparent outline-none" type="date" id="f-day" name="from-date" min="2024-12-11" max="2025-12-10" />
+                                            </div>
+                                        </div>
+                                        <div className="w-20 hidden 2xl:block m2xl:block">
+                                            <div className="w-[1px] h-14 bg-[#C3D4E9] opacity-40">
+                                            </div>
+                                        </div>
+                                        <div className="m2xl:w-[40%] w-full" >
+                                            <h2 className="text-[16px] font-bold">Time</h2>
+                                            <div className="bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl sm:w-full sm:h-16 text-[#90A3BF] text-[12px] font-medium p-5">
+                                                <input className=" bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl outline-none" type="time" id="time" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Drop off Location */}
+
+                                <div className="w-full h-auto m2xl:h-44 py-5 bg-white rounded-m2xl space-y-5">
+                                    <div className="flex w-full gap-3">
+                                        <input type="radio" />
+                                        <h2 className=" text-[16px] font-semibold">Drop - Off</h2>
+                                    </div>
+                                    <div className="m2xl:flex m2xl:justify-between m2xl:items-center ">
+                                        <div className="m2xl:w-[40%] w-full">
+                                            <h2 className="text-[16px] font-bold ">Location</h2>
+                                            <div className="bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl sm:w-full sm:h-16 text-[#90A3BF] text-[12px] font-medium p-5">
+                                                <select className="bg-transparent outline-none" name="city" id="city">
+                                                    {[
+                                                        { value: "none", label: "Select your city" },
+                                                        { value: "khi", label: "Karachi" },
+                                                        { value: "hyd", label: "Hyderabad" },
+                                                        { value: "lhr", label: "Lahore" },
+                                                        { value: "qta", label: "Quetta" },
+                                                        { value: "isb", label: "Islamabad" },
+                                                        { value: "nbs", label: "Nawabshah" },
+                                                    ].map((option) => (
+                                                        <option key={option.value} value={option.value}>
+                                                            {option.label}
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div className="w-20 hidden m2xl:block">
+                                            <div className="w-[1px] h-14 bg-[#C3D4E9] opacity-40">
+                                            </div>
+                                        </div>
+                                        <div className="m2xl:w-[40%] w-full" >
+                                            <h2 className="text-[16px] font-bold">Date</h2>
+                                            <div className="bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl sm:w-full sm:h-16 text-[#90A3BF] text-[12px] font-medium p-5">
+                                                <input className="bg-[#F6F7F9] rounded-m2xl m2xl:bg-transparent outline-none" type="date" id="f-day" name="from-date" min="2024-12-11" max="2025-12-10" />
+                                            </div>
+                                        </div>
+                                        <div className="w-20 hidden m2xl:block">
+                                            <div className="w-[1px] h-14 bg-[#C3D4E9] opacity-40">
+                                            </div>
+                                        </div>
+                                        <div className="m2xl:w-[40%] w-full" >
+                                            <h2 className="text-[16px] font-bold">Time</h2>
+                                            <div className="bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl sm:w-full sm:h-16 text-[#90A3BF] text-[12px] font-medium p-5">
+                                                <input className=" bg-[#F6F7F9] m2xl:bg-transparent rounded-m2xl outline-none" type="time" id="time" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div className="flex justify-between lg:items-center items-start sm:px-0 px-2 py-5">
+                                    <div className="w-36">
+                                        <h1 className="font-bold text-[20px] xs:text-[16px] sm:text-sm bg-white xs:w-56 sm:w-60 ">Total Rental Price</h1>
+                                        <h6 className="text-[9px] xs:text-[8px]  text-[#90A3BF] sm:text-[10px] font-medium">Overall price and includes rental discount</h6>
+                                    </div>
+                                    <h1 className="text-[32px] bg-white xs:text-[24px] sm:text-[28px]  font-bold">$80.00</h1>
+                                </div>
+
+                            </div>
+
+
+                            <div className="space-y-5 2xl:w-full">
+                                <div className="w-auto 2xl:w-full h-auto bg-white rounded-lg p-5">
+                                    <div className="flex justify-between items-center text-[#90A3BF] text-[14px] font-medium">
+                                        <h1 className=" bg-white text-black text-[20px] font-bold">Top 5 Car Rental</h1>
+                                        <div className="flex gap-1">
+                                            <div className="w-2 h-2 rounded-full bg-black" />
+                                            <div className="w-2 h-2 rounded-full bg-black" />
+                                            <div className="w-2 h-2 rounded-full bg-black" />
+                                        </div>
+                                    </div>
+
+                                    {/* <div className="flex justify-between items-center py-10 gap-4"> */}
+                                    <div className="flex justify-between xs:flex-col xs:justify-center sm:flex-col sm:justify-center md:justify-center items-center md:flex-col m2xl:px-6 w-full px-6  ">
+                                        <div className="w-full xs:w-auto sm:w-auto md:w-auto lg:px-[2%] md:px-0 sm:px-0 h-full m2xl:px-0 ">
+                                            <Charts  />
+                                        </div>
+                                        <div className="w-24 "></div>
+                                        <div className="flex flex-col justify-between md:w-[60%] sm:w-[80%]  py-4 sm:gap-6 md:gap-6 md:my-6 sm:py-6 w-full  h-[270px] ">
+                                            <div className="flex justify-between ">
+                                                <div className="flex items-center gap-4 text-right">
+                                                    <div className="w-3 h-3 rounded-full bg-[#0D3559]" />
+                                                    <h2 className="text-[#85A8F8] 2xl:text-lg xl:text-lg text-[14px] font-medium">Sport Car</h2>
+                                                </div>
+                                                <h3 className=" text-[14px] 2xl:text-lg xl:text-lg font-semibold">17,439</h3>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <div className="flex items-center gap-4 text-right">
+                                                    <div className="w-3 h-3 rounded-full bg-[#175D9C]" />
+                                                    <h2 className="text-[#85A8F8] 2xl:text-lg xl:text-lg text-[14px] font-medium">SUV</h2>
+                                                </div>
+                                                <h3 className=" text-[14px] 2xl:text-lg xl:text-lg font-semibold">9,478</h3>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <div className="flex items-center gap-4 text-right">
+                                                    <div className="w-3 h-3 rounded-full bg-[#2185DE]" />
+                                                    <h2 className="text-[#85A8F8] 2xl:text-lg xl:text-lg text-[14px] font-medium">Coupe</h2>
+                                                </div>
+                                                <h3 className=" text-[14px] 2xl:text-lg xl:text-lg font-semibold">18,197</h3>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <div className="flex items-center gap-4 text-right">
+                                                    <div className="w-3 h-3 rounded-full bg-[#63A9E8]" />
+                                                    <h2 className="text-[#85A8F8] 2xl:text-lg xl:text-lg text-[14px] font-medium">Hatchback</h2>
+                                                </div>
+                                                <h3 className=" text-[14px] 2xl:text-lg xl:text-lg font-semibold">12,510</h3>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <div className="flex items-center gap-4 text-right">
+                                                    <div className="w-3 h-3 rounded-full bg-[#A6CEF2]" />
+                                                    <h2 className="text-[#85A8F8] 2xl:text-lg xl:text-lg text-[14px] font-medium">MPV</h2>
+                                                </div>
+                                                <h3 className=" text-[14px] 2xl:text-lg xl:text-lg font-semibold">14,406</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                {/* cars  */}
+                                <div className="w-auto h-auto bg-white rounded-m2xl p-5">
+                                    <div className="flex justify-between items-center text-[#90A3BF] text-[14px] font-medium">
+                                        <h1 className=" bg-white text-black xs:text-[13px] text-[20px] font-bold">Recent Transaction</h1>
+                                        <button className="text-[#3563E9] xs:text-[10px] text-[16px] font-semibold">View All</button>
+                                    </div>
+                                    <div>
+                                        {taracectioncar.map((c)=>{
+                                            return(
+                                                <div key={c.carname} className="w-full">
+                                                <div className="flex gap-4 py-10 w-full">
+                                                    <Image className="w-36 xs:w-28" src={c.carpic} alt=""/>
+                                                    <div className="w-full">
+                                                        <div className="flex w-full text-xl md:text-lg sm:text-[10px] font-bold items-center justify-between">
+                                                            <p className="sm:text-[9px] xs:text-[9px]">{c.carname}</p>
+                                                            <p className="text-slate-400 xs:text-[8px] text-lg sm:text-[9px] md:text-sm font-normal">{c.date}</p>
+                                                        </div>
+                                                        <div className="flex w-full text-xl md:text-lg sm:text-[10px]font-bold justify-between">
+                                                        <p  className="text-slate-400 xs:text-[9px] text-lg sm:text-[9px] md:text-sm font-normal">{c.carcatagory}</p>
+                                                            <p className="sm:text-[9px] xs:text-[8px]">{c.price}</p>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                                <div> <hr/></div>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+
+                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </>
+    )
+}

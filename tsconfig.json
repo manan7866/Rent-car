@@ -39,7 +39,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts" // Include generated types for Next.js
-  ],
+, "app/check/page.rr"  ],
   "exclude": [
     "node_modules", // Exclude node_modules as usual
     "dist" // Optionally exclude dist folder if it exists

@@ -1,6 +1,6 @@
 {
   "name": "car rent",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -28,6 +28,7 @@
     "react-image-crop": "^11.0.7",
     "react-slider": "^2.0.6",
     "react-time-picker": "^7.0.0",
+    "recharts": "^2.15.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },

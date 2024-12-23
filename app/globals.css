@@ -125,3 +125,25 @@ h1{
 .custom-scroll::-webkit-scrollbar{
   display: none;
 }
+/* CSS variables for chart sizes */
+/* CSS variables for chart sizes */
+/* .chart-size-small {
+  --inner-radius: 40px;
+  --outer-radius: 80px;
+  --stroke-width: 4px;
+  --padding-angle: 5;
+}
+
+.chart-size-medium {
+  --inner-radius: 60px;
+  --outer-radius: 100px;
+  --stroke-width: 5px;
+  --padding-angle: 5;
+} */
+
+.chart {
+  --inner-radius: 80px;
+  --outer-radius: 300px;
+  --stroke-width: 6px;
+  --padding-angle: 5;
+}

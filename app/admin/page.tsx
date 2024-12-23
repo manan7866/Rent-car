@@ -9,7 +9,7 @@ import car from "@/public/images/car.svg"
 import car2 from "@/public/images/car2.svg"
 import car3 from "@/public/images/car3.svg";
 import car6 from "@/public/images/car6.svg"
-import Charts from "../charts/Charts";
+import {Chart} from "../charts/Charts";
 
 
 export default function Admin() {
@@ -241,12 +241,12 @@ export default function Admin() {
                                     </div>
 
                                     {/* <div className="flex justify-between items-center py-10 gap-4"> */}
-                                    <div className="flex justify-between xs:flex-col xs:justify-center sm:flex-col sm:justify-center md:justify-center items-center md:flex-col m2xl:px-6 w-full px-6  ">
-                                        <div className="w-full xs:w-auto sm:w-auto md:w-auto lg:px-[2%] md:px-0 sm:px-0 h-full m2xl:px-0 ">
-                                            <Charts  />
+                                    <div className="flex justify-between xs:flex-col xs:justify-center sm:flex-col sm:justify-center md:w-full items-center m2xl:w-full  md:flex-col m2xl:px-6 w-full px-6  ">
+                                        <div className="m2xl:w-[400px]    w-full xs:w-full sm:w-full  lg:px-[2%] md:px-0 sm:px-0 h-full m2xl:px-0 ">
+                                            <Chart  />
                                         </div>
-                                        <div className="w-24 "></div>
-                                        <div className="flex flex-col justify-between md:w-[60%] sm:w-[80%]  py-4 sm:gap-6 md:gap-6 md:my-6 sm:py-6 w-full  h-[270px] ">
+                                        
+                                        <div className="flex flex-col justify-between md:w-[55%] sm:w-[80%] lg:w-[40%]  py-4 m2xl:w-[45%] sm:gap-6 md:gap-0 md:my-6 sm:py-6 w-full xs:h-[220px]  h-[270px] ">
                                             <div className="flex justify-between ">
                                                 <div className="flex items-center gap-4 text-right">
                                                     <div className="w-3 h-3 rounded-full bg-[#0D3559]" />

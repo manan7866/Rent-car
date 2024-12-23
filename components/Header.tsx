@@ -78,11 +78,13 @@ export default function Header (){
   const mp = usePathname();
  return(
   <div>
-   <div className="flex justify-between px-14 h-[124px] xs:px-4 xs:py-4 xs:h-[60px] sm:h-[70px] sm:px-6 sm:py-6 md:h-[90px] md:px-6 md:py-6 xl:h-[110px] w-full items-center"> 
-   { mp ==='/' ? (<div><div className="text-[55px]  lg:text-[40px] xs:text-[28px] sm:text-[28px] md:text-[30px] 2xl:hidden  text-blue-500 font-semibold font-sans ">MORENT</div></div>) : (<div className="hidden xs:block  sm:block md:block xl:block lg:text-4xl xs:text-2xl sm:text-2xl md:text-2xl lg:block text-slate-400 text-6xl"><VscMenu onClick={handlemenu} className="lg:mb-7 " /></div>)}
+   <div className="flex justify-between px-14  h-[124px] xs:px-4 xs:py-4 xs:h-[60px] sm:h-[70px] sm:px-6 sm:py-6 md:h-[90px] md:px-6 md:py-6 xl:h-[110px] w-full items-center"> 
+   <div className="m2xl:hidden 2xl:hidden ">
+   { mp ==='/' ? (<div><div className="text-[55px] m2xl:hidden  lg:text-[40px] xs:text-[28px] sm:text-[28px] md:text-[30px] 2xl:hidden  text-blue-500 font-semibold font-sans ">MORENT</div></div>) : (<div className="hidden xs:block  sm:block md:block xl:block lg:text-4xl xs:text-2xl sm:text-2xl md:text-2xl lg:block text-slate-400 text-6xl"><VscMenu onClick={handlemenu} className="lg:mb-7 " /></div>)}
+   </div>
    
-    <div className="xl:hidden xs:hidden sm:hidden lg:hidden md:hidden flex items-center gap-24 ">
-    <div className="text-[44px] text-blue-500 font-semibold font-sans pl-6">MORENT</div>
+    <div className="xl:hidden xs:hidden sm:hidden lg:hidden md:hidden  flex items-center gap-24 ">
+    <div className="text-[44px] text-blue-500 font-semibold font-sans  pl-6">MORENT</div>
     <div className="h-[44px] w-[510px] rounded-3xl border-slate-300 border-[1px] flex items-center px-3 justify-between">
         <div className=" flex gap-2 ">
         <Image src={Search} height={28} width={28} alt="search" className="text-sm"></Image>
@@ -105,8 +107,8 @@ export default function Header (){
     <div className=" hidden xl:block xs:block lg:block sm:block md:block xs:w-[33px] sm:w-[33px] md:w-[35px] w-[55px] rounded-full border-slate-300 border-[1px] "><Image className="md:h-[35px] md:w-[35px] xs:h-[33px] xs:w-[33px] sm:h-[33px] sm:w-[33px]" src={iconimg.src} height={55} width={55} alt=""></Image></div>
     
   </div>
-  <div className="hidden xs:block lg:block sm:block  md:block xl:block xs:px-4 xs:pb-4 sm:px-6 sm:pb-6 md:px-6 md:pb-6 pb-12 px-14">
-  { mp ==='/' ? (<div></div>) : (<div className="text-[55px] lg:text-[40px] xs:text-[28px] sm:text-[28px] md:text-[30px] xs:mb-3 sm:mb-3 md:mb-3 mb-6  text-blue-500 font-semibold font-sans ">MORENT</div>)}
+  <div className="hidden xs:block lg:block sm:block  md:block  xl:block xs:px-4 xs:pb-4 sm:px-6 sm:pb-6 md:px-6 md:pb-6 pb-12 px-14">
+  { mp ==='/' ? (<div></div>) : (<div className="text-[55px] lg:text-[40px] xs:text-[28px] sm:text-[28px] md:text-[30px] xs:mb-3 sm:mb-3 md:mb-3 mb-6   text-blue-500 font-semibold font-sans ">MORENT</div>)}
   
   <div className="flex justify-between gap-6 xs:gap-2 sm:gap-2 w-full ">
   <div className="h-[80px] lg:h-[60px] md:h-[50px] xs:h-[40px] sm:h-[40px] w-full  rounded-xl border-slate-300 border-[1px] flex items-center px-3  justify-between">
@@ -212,7 +214,7 @@ export default function Header (){
        
       ):(
       <div className="w-full relative bg-white h-auto px-4 py-6 ">
-        <RxCross1 onClick={handlemenu}  className='absolute top-2 right-2 text-zxl' />
+        <RxCross1 onClick={handlemenu}  className='absolute top-2 right-2 text-2xl' />
 
                 
       <div className="flex flex-col bg-white gap-6">
